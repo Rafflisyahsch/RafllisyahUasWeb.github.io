@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="transaksi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+header{
+    width: 1180px;
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(123,123,249,1) 33%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header img{
+    width: 40px;
+    border-radius: 50px;
+    margin: 5px 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover{
+    color: aqua;
+    transition: 0.5s;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+footer{
+    width: 1280px;
+    height: 50px;
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(123,123,249,1) 33%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.container{
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(123,123,249,1) 33%, rgba(0,212,255,1) 100%);;
+    width: 950px;
+    height: 400px;
+    margin-top: 25px;
+    padding: 20px 30px ;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 26px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.container button {
+    margin: 20px 0;
+    width: 200px;
+    height: 25px;
+    font: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px ;
+}
+
+
+
+.container button:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+form table tr td{
+    margin-bottom: 30px ;
+}
+
+#tabel-simpan-pinjam {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 992px){
+
+    .container{
+        margin: 64px 150px;
+    }
+
+    .wrapper{
+        background-color: blue;
+        margin: 66px 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header{
+        width: 705px;
+        height: 80px;
+    }
+
+    header img nav {
+        margin-top: 50px;
+    }
+
+    footer{
+        width: 805px;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .container{
+        /* background-color: blue; */
+        width: 700px;
+        height: 125.1vh;
+        margin-left: 25px;
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 360px ){
+    header{
+        width: 330px;
+        height: 40px;
+        justify-content: space-between;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    header img{
+        width: 30px;
+    }
+
+    header img nav {
+        margin-top: px;
+    }
+
+    header nav{
+        display: flex;
+    }
+
+    header nav ul{
+        display: flex;
+        gap: 5px;
+        height: 20px;
+    }
+
+
+    header nav ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav ul li a{
+        font-size: 8px;
+    }
+
+    .btn{
+        margin-left: 10px;
+    }
+
+    .container{
+        width: 270px;
+        height: 155vh;
+        margin-left: 10px;
+        padding: 30px 30px;
+    }
+
+    .container table tr td {
+        font-size: 10px;
+    }
+
+
+    #tabel-simpan-pinjam {
+    font-size: 8px;
+}
+
+    footer{
+        width: 350px;
+        height: 80px;
+        margin-top: 290px;
+        font-size: 8px;
+    }
+}
+
+
+</style>
+
+<header>
+    <img src="logo.png" alt="img">
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html" class="btn">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    
+    <center>
+        <!-- <h3>Transaksi</h3> -->
+        <div class="container" align="center" >
+        <form action="">
+            <table height="240px"> 
+                <tr>
+                    <td width="30%" height="20px"><label>Nama:</label></td>
+                    <td width="5%" align="center">:</td>
+                    <td><input type="text" id="nama" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Jumlah Pinjam:</label></td>
+                    <td width="5%" align="center">:</td>
+                    <td><input type="number" id="jumlah-pinjam" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Jumlah Simpan:</label></td>
+                    <td width="5%" align="center">:</td>
+                    <td><input type="number" id="jumlah-simpan" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Tanggal Pinjam:</label></td>
+                    <td width="5%" align="center">:</td>
+                    <td><input type="date" id="tanggal-pinjam" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Tanggal Bayar:</label></td>
+                    <td width="5%" align="center">:</td>
+                    <td><input type="date" id="tanggal-bayar" required></td>
+                </tr>
+            </table>
+            <button id="tambah">Tambah</button>
+            <button type="reset">Reset</button>
+        </form>
+       
+       
+        <table id="tabel-simpan-pinjam" border="2">
+            <thead>
+                <tr>
+                    <th width="10%">No</th>
+                    <th width="20%">Nama</th>
+                    <th width="10%">Jumlah Pinjam</th>
+                    <th>Jumlah Simpan</th>
+                    <th>Tanggal Pinjam</th>
+                    <th>Tanggal Bayar</th>
+                </tr>
+            </thead>
+        <tbody id="tabel-data">
+        </tbody>
+        </table>
+    </center>
+    
+    </div>
+</body>
+<script>
+    let dataSimpanPinjam = [];
+
+// Fungsi tambah data
+function tambahData() {
+ const nama = document.getElementById('nama').value;
+ const jumlahPinjam = parseInt(document.getElementById('jumlah-pinjam').value);
+ const jumlahSimpan = parseInt(document.getElementById('jumlah-simpan').value);
+ const tanggalPinjam = document.getElementById('tanggal-pinjam').value;
+ const tanggalBayar = document.getElementById('tanggal-bayar').value;
+
+ const data = {
+ nama,
+ jumlahPinjam,
+ jumlahSimpan,
+ tanggalPinjam,
+ tanggalBayar
+ };
+
+ dataSimpanPinjam.push(data);
+ tampilkanData();
+}
+
+// Fungsi tampilkan data
+function tampilkanData() {
+ const tabelData = document.getElementById('tabel-data');
+ tabelData.innerHTML = '';
+
+ dataSimpanPinjam.forEach((data, index) => {
+ const row = tabelData.insertRow();
+ row.innerHTML = `
+ <td>${index + 1}</td>
+ <td>${data.nama}</td>
+ <td>${data.jumlahPinjam}</td>
+ <td>${data.jumlahSimpan}</td>
+ <td>${data.tanggalPinjam}</td>
+ <td>${data.tanggalBayar}</td>
+ `;
+ });
+}
+
+// Event listener
+document.getElementById('tambah').addEventListener('click', (e) => {
+ e.preventDefault();
+ tambahData();
+});
+
+
+</script>
+<footer>
+    <p>Design by Muhammad Rafflisyah © 2024 Allright Reserved</p>
+</footer>
+</html>

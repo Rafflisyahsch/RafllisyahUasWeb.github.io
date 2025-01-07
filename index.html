@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="beranda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+header{
+    width: 1180px;
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(123,123,249,1) 33%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header img{
+    width: 40px;
+    border-radius: 50px;
+    margin: 5px 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover{
+    color: aqua;
+    transition: 0.5s;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn1 {
+    display: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.container {
+    /* background-color: aqua; */
+    width: 1280px;
+    display: flex;
+    height: 82.2vh;    
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    /* background-color: blanchedalmond; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: space-around;
+}
+
+.card {
+    width: 280px;
+    background: #FBFBFB;
+    border: 3px solid #8b8b8b;
+    height: 400px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.card h1{
+    margin: 5px ;
+    font-size: 15px;
+}
+
+.card p{
+    margin-right: 10px;
+    font-size: 5px;
+}
+
+.card li {
+    font-size: 12px;
+}
+.card img{
+    width: 275px;
+    border-radius: 20px;
+    border: 2px solid rgb(48, 45, 45);
+}
+
+footer{
+    width: 1280px;
+    height: 50px;
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(123,123,249,1) 33%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 992px){
+
+    .container{
+        height: auto;
+    }
+
+    .wrapper{
+        margin: 66px 0;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    header{
+        width: 895px;
+        height: 80px;
+    }
+
+    header img nav {
+        margin-top: 50px;
+    }
+
+    footer{
+        width: 995px;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .container{
+        /* background-color: blue; */
+        width: 995px;
+        height: auto;
+    }
+
+    .wrapper {
+        /* background-color: aqua; */
+        flex-direction: column;
+        width: 900px;
+        padding: 20px 0;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card{
+        width: 600px;
+        height: auto;
+    }
+
+    .card img{
+        width: 595px;
+    }
+
+    .card h1{
+        font-size: 30px ;
+    }
+
+    .card li{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 360px ){
+    header{
+        width: 360px;
+        height: 100px;
+        gap: 0;
+        padding: 0;
+    }
+
+    header img{
+        width:30px;
+    }
+
+    header img nav {
+        margin-top: 50px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+
+    }
+
+    footer{
+        width: 360px;
+        height: 80px;
+    }
+
+    footer p{
+        font-size: 8px;
+    }
+
+    nav ul li{
+        margin: 0px 0px 0px -20px;
+    }
+
+    .container{
+        /* background-color: blue; */
+        width: 360px;
+        height: auto;
+    }
+
+    .wrapper {
+        /* background-color: aqua; */
+        flex-direction: column;
+        width: 350px;
+        padding: 10px 0;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card{
+        width: 300px;
+        height: auto;
+    }
+
+    .card img{
+        width: 300px;
+    }
+
+    .card h1{
+        font-size: 18px ;
+    }
+
+    .card li{
+        font-size: 12px;
+    }
+}
+</style>
+<header>
+    <img src="logo.png" alt="img">
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html" class="btn">Login</a></li>
+        </ul>
+        <a href="login.html" class="btn1">Login</a>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <img src="login.png" alt="">
+                <h1>1. Login</h1>
+                <p>
+                    <ul>
+                        <li>Masukan Username & Password</li>
+                        <li>Jika belum mempunyai akun, silahkan Register</li>
+                        <li>Jika sudah seilahkan Login</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card">
+                <img src="transaksi.png" alt="">
+                <h1>2. Transaksi</h1>
+                <p>
+                    <ul>
+                        <li>Jika ingin melakukan transaksi, anda bisa memilih menu Transaksi</li>
+                        <li>Masukan Nama Lengkap</li>
+                        <li>Masukan Jumlah Nominal yang ingin di Pinjam</li>
+                        <li>Jika ingin simpan, masukan Nominal yang ingin di Simpan</li>
+                        <li>Pilih tanggal Pinjam dan Tanggal Bayar</li>
+                        <li>Tekan tambah jika sudah benar & tekan Reset jika ingin mengulanginnya lagi</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card">
+                <img src="profile.png" alt="">
+                <h1>3. Profile</h1>
+                <p>
+                    <ul>
+                        <li>Anda bisa melihat Profile anda dengan cara memilih menu Profile</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Design by Muhammad Rafflisyah © 2024 Allright Reserved</p>
+</footer>
+</html>
